@@ -1,0 +1,12 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "VITE_CONTACT_ENDPOINT",
+      "description": "Optional HTTPS endpoint (e.g. a Supabase Edge Function) that receives contact, property-enquiry and newsletter submissions as a JSON POST. When unset, forms run in validation-only mode and never report a false success.",
+      "requiredAtBoot": false
+    }
+  ]
+}
